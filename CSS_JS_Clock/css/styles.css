@@ -1,0 +1,27 @@
+
+
+html {
+  font-size: 16px;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+body{
+
+};
+
+main {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.mt-5rem {
+  margin-top: 5rem;
+}
+
+.mt-8rem {
+  margin-top: 8rem;
+}
