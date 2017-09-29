@@ -1,0 +1,52 @@
+
+
+html {
+  font-size: 16px;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+body{
+  background: url(../images/bg-main.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.9;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+};
+
+main {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.mt-5rem {
+  margin-top: 5rem;
+}
+
+.mt-8rem {
+  margin-top: 8rem;
+}
+
+.key {
+  color: white;
+  font-size: 3rem;
+  border: 0.1rem solid white;
+  background-color: black;
+  transition: all 0.07s;
+}
+
+.play {
+  transform: scale(1.1);
+  box-shadow: 0.75rem 0.5rem 0.5rem #602900;
+}
+
+.sound {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
