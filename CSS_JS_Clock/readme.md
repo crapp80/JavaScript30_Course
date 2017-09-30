@@ -33,3 +33,17 @@ Build a circle in CSS:
        0 0 10px rgba(0,0,0,0.2);
    }
 ```
+
+```css
+    .hand {
+      width: 50%;
+      height: 6px;  
+      background: black;  
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%; // Moves the turning point of the hand to the right end. Default turning point is middle (50%)
+      transform: rotate(90deg);
+      transition: all 0.05s;  
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);  
+    }
+```
