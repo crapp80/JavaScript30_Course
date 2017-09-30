@@ -17,6 +17,7 @@ END
 
 Build a circle in CSS:  
 
+```css
    .clock {  
      width: 30rem; // width + height must be equal
      height: 30rem;  
@@ -27,7 +28,8 @@ Build a circle in CSS:
      padding: 2rem;  
      box-shadow:
        0 0 0 4px rgba(0,0,0,0.1), // offset-x | offset-y | blur-radius | spread-radius | color  
-       inset 0 0 0 3px #EFEFEF,  // first inner shadow (inset)
+       inset 0 0 0 3px #EFEFEF,  // first inner shadow (inset)  
        inset 0 0 10px black, // second inner shadow
        0 0 10px rgba(0,0,0,0.2);
-   } 
+   }
+```
