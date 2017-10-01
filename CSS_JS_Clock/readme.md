@@ -34,6 +34,8 @@ Build a circle in CSS:
    }
 ```
 
+Style Clock Hands for analog Clock
+
 ```css
     .hand {
       width: 50%;
@@ -47,3 +49,8 @@ Build a circle in CSS:
       transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);  
     }
 ```
+
+Add a digital Clock
+
+```javascript
+    document.getElementById('digitalClock').innerHTML = now.getHours() + ':' + ('0'+now.getMinutes()).slice(-2) + ':' + ('0'+now.getSeconds()).slice(-2); // add a 0 to minutes and seconds first, then use slice(-2) to take the rightmost 2 characters
