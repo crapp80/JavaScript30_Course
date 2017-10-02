@@ -54,3 +54,6 @@ Add a digital Clock
 
 ```javascript
     document.getElementById('digitalClock').innerHTML = now.getHours() + ':' + ('0'+now.getMinutes()).slice(-2) + ':' + ('0'+now.getSeconds()).slice(-2); // add a 0 to minutes and seconds first, then use slice(-2) to take the rightmost 2 characters
+```
+
+You can see it in action here: [https://crapp80.github.io/JavaScript30_Course/02_CSS_JS_Clock/](https://crapp80.github.io/JavaScript30_Course/02_CSS_JS_Clock/)  
