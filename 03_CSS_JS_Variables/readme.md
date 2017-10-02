@@ -16,4 +16,4 @@
     }  
 ```  
 
-You can see it in action here: [https://crapp80.github.io/JavaScript30_Course/CSS_JS_Variables/](https://crapp80.github.io/JavaScript30_Course/CSS_JS_Variables/)
+You can see it in action here: [https://crapp80.github.io/JavaScript30_Course/CSS_JS_Variables/](https://crapp80.github.io/JavaScript30_Course/03_CSS_JS_Variables/)
