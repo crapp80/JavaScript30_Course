@@ -3,4 +3,4 @@
 ## Things to remember:
 *see inline comments*
 
-See it in action [here](https://crapp80.github.io/JavaScript30_Course/10_Multiple_Checkboxes/)
+See it in action [here](https://crapp80.github.io/JavaScript30_Course/10_Multiple_Checkboxes/index.html)
