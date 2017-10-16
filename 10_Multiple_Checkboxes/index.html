@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hold Shift to Check Multiple Checkboxes</title>
+</head>
+<style>
+  html {
+    font-size: 10px;
+    font-family: Verdana;
+  }
+  body {
+    position: absolute;
+    width: 100%;
+    background-color: #BADA55;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .checkboxes {
+    position: relative;
+    font-size: 1.6rem;
+    background-color: #c1bbc2;
+    width: 30%;
+    padding: 2rem 2rem;
+    margin: 5rem auto;
+    box-sizing: border-box;
+  }
+
+  input:checked + label {
+    text-decoration: line-through;
+  }
+</style>
+<body>
+  <h1>Hold Shift to Check Multiple Checkboxes</h1>
+  <form class="checkboxes">
+    <fieldset>
+      <input type="checkbox" id="checkbox1" name="checkbox1">
+      <label for="checkbox1">Milk</label>
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" id="checkbox2" name="checkbox2">
+      <label for="checkbox2">Butter</label>
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" id="checkbox3" name="checkbox3">
+      <label for="checkbox3">Eggs</label>
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" id="checkbox4" name="checkbox4">
+      <label for="checkbox4">Cheese</label>
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" id="checkbox5" name="checkbox5">
+      <label for="checkbox4">Sausages</label>
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" id="checkbox6" name="checkbox6">
+      <label for="checkbox4">Tomatoes</label>
+    </fieldset>
+  </form>
+<script>
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+  let lastChecked;
+
+  function handleCheck(e) {
+    //check if they had shiftKey down
+    //And check that they are checking it
+    let inBetween = false;
+    if (e.shiftKey && this.checked) {
+      //loop over every single checkbox
+      checkboxes.forEach(checkbox => {
+        console.log(checkbox);
+        if (checkbox === this || checkbox === lastChecked){
+          inBetween = !inBetween; // toggles between false and true
+          console.log('Starting to Check them inBetween');
+          console.log(inBetween);
+        }
+
+        if (inBetween) {
+          checkbox.checked = true;
+        }
+      });
+    }
+
+    lastChecked = this;
+  }
+
+  checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+</script>
+</body>
+</html>
